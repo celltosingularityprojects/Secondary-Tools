@@ -1,0 +1,22 @@
+{
+  "name": "postgresql-migration",
+  "version": "1.0.0",
+  "description": "migration assistance for migrating from MongoDB to postgresql",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "tsc -p tsconfig.json && node dist/index.js",
+    "migrate": "npx prisma migrate dev",
+    "generate": "npx prisma generate"
+  },
+  "author": "SirH",
+  "license": "ISC",
+  "devDependencies": {
+    "prisma": "^3.6.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.6.0",
+    "discord.js": "^13.3.1",
+    "dotenv": "^10.0.0",
+    "mongoose": "^6.1.1"
+  }
+}

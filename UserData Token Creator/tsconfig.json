@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+      "module": "CommonJS",
+      "target": "ESNext",
+      "moduleResolution": "node",
+      "strict": false,
+      "declaration": false,
+      "removeComments": false,
+      "alwaysStrict": true,
+      "pretty": false,
+      "skipLibCheck": true,
+      "sourceMap": true,
+      "esModuleInterop": false,
+      "resolveJsonModule": true,
+      "outDir": "dist/",
+      "baseUrl": ".",
+      "paths": {
+        
+      },
+    },
+      "watchOptions": {
+        "watchFile": "useFsEvents",
+        "watchDirectory": "useFsEvents",
+        "fallbackPolling": "dynamicPriority"
+    },
+    "exclude": [
+      "node_modules",
+      "./node_modules",
+      "./node_modules/*",
+      "./node_modules/@types/node/index.d.ts"
+    ]
+  }

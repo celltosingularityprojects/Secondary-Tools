@@ -1,0 +1,16 @@
+{
+  "name": "userdata-token-creator",
+  "version": "1.0.0",
+  "description": "Create tokens for UserData handling",
+  "main": "dist/index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SirH",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^15.0.2",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {}
+}
