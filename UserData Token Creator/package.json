@@ -4,7 +4,7 @@
   "description": "Create tokens for UserData handling",
   "main": "dist/index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm i && tsc -p tsconfig.json"
   },
   "author": "SirH",
   "license": "ISC",
