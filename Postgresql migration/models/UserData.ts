@@ -10,6 +10,7 @@ export interface UserDataFormat {
   singularity_speedrun_time: number;
   all_sharks_obtained: boolean;
   all_hidden_achievements_obtained: boolean;
+  betaTester: boolean;
   edited_timestamp: number;
 }
 
@@ -43,6 +44,10 @@ const UserDataSchema = new _.Schema<UserDataFormat>({
     default: false,
   },
   all_hidden_achievements_obtained: {
+    type: Boolean,
+    default: false,
+  },
+  betaTester: {
     type: Boolean,
     default: false,
   },

@@ -98,13 +98,14 @@ async function main() {
   await prisma.userData.createMany({ data: userData.map(u => {
     return {
       token: u.token,
-      discordId: u.discordId,
+      discord_id: u.discordId,
       metabits: u.metabits,
       dino_rank: u.dino_rank,
       prestige_rank: u.prestige_rank,
       singularity_speedrun_time: u.singularity_speedrun_time,
       all_sharks_obtained: u.all_sharks_obtained,
       all_hidden_achievements_obtained: u.all_hidden_achievements_obtained,
+      beta_tester: u.betaTester,
     }
   }) });
   await prisma.vote.createMany({ data: votes.map(v => {
