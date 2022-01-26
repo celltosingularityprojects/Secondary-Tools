@@ -8,8 +8,6 @@ import { BoosterRewards, Game, Information, Leaderboard, Reminder, Report, UserD
 
 // migrate each mongoose model to prisma model
 async function main() {
-  await prisma.$queryRaw`CREATE SCHEMA IF NOT EXISTS public;`;
-
   const boosterRewards = await BoosterRewards.find();
   const games = await Game.find();
   const information = await Information.find();
