@@ -99,7 +99,7 @@ async function main() {
     return {
       token: u.token,
       discord_id: u.discordId,
-      metabits: u.metabits,
+      metabits: u.metabits > Number.MAX_SAFE_INTEGER ? Number.MAX_SAFE_INTEGER : u.metabits,
       dino_rank: u.dino_rank,
       prestige_rank: u.prestige_rank,
       singularity_speedrun_time: u.singularity_speedrun_time,
